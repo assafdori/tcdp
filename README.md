@@ -16,8 +16,8 @@
 11. [ ] [Misc 🧰](link)
 
 ### Homework & Practice 📝
-1. [ ] 
-2. [ ] 
-3. [ ] 
-4. [ ] 
-5. [ ] 
+1. [ ] Placeholder
+2. [ ] Placeholder
+3. [ ] Placeholder
+4. [ ] Placeholder
+5. [ ] Placeholder
