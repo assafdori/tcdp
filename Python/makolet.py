@@ -9,15 +9,12 @@ shopping_cart = ["Apples", "Milk", "Bread", "Eggs", "Cheese"]
 
 cart_price = 0
 
-cart_price += int(input(f'What is the price for the {shopping_cart[0]} you got?\n'))
-cart_price += int(input(f'What is the price for the {shopping_cart[0]} you got?\n'))
-cart_price += int(input(f'What is the price for the {shopping_cart[1]} you got?\n'))
-cart_price += int(input(f'What is the price for the {shopping_cart[2]} you got?\n'))
-cart_price += int(input(f'What is the price for the {shopping_cart[3]} you got?\n'))
-cart_price += int(input(f'What is the price for the {shopping_cart[4]} you got?\n'))
+for item in shopping_cart:
+    cart_price += int(input(f'What is the price for {item}?\n'))
 
-print(f"Your total is {cart_price}.")
+print(f"The total is: {cart_price}NIS")
+
 if cart_price > budget:
     print(f"You don't have enough mullah.")
 elif cart_price < budget:
-    print(f"Thanks for shopping at Assaf's Makolet! You have received {budget - cart_price} in change.")
+    print(f"Thanks for shopping at Assaf's Makolet! You have received {budget - cart_price}NIS in change.")
