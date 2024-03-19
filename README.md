@@ -14,5 +14,5 @@
 9. [ ] [Cloud Computing ☁️](link)
 10. [ ] [Misc 🧰](link)
 
-### Homework & Practice 📟
+### Homework & Practice 📝
 1. [ ] Placeholder
