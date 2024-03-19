@@ -9,6 +9,7 @@
 - print(True or False) # bool
 
 #### Misc
+- Use f strings print(f'Hello, my name is {name}')
 - Use '\n' to skip to a new line.
 - Use input('Ask for input') to get user input.
 - Use input = input('Ask for input') to store the user input as variable.
