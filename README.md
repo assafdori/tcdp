@@ -16,7 +16,7 @@
 11. [ ] [Misc 🧰](link)
 
 ### Homework & Practice 📝
-1. [ ] Placeholder
+1. [ ] Sharpen Python skills. Mostly general knowledge and syntax writing of functions and indentations.
 2. [ ] Placeholder
 3. [ ] Placeholder
 4. [ ] Placeholder
