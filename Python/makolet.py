@@ -10,7 +10,7 @@ shopping_cart = ["Apples", "Milk", "Bread", "Eggs", "Cheese"]
 cart_price = 0
 
 for item in shopping_cart:
-    cart_price += int(input(f'What is the price for {item}?\n'))
+    cart_price += int(input(f'What is the price for the {item} you got?\n'))
 
 print(f"The total is: {cart_price}NIS")
 
