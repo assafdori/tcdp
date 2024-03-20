@@ -3,7 +3,7 @@
 #### This repository tracks my progress while taking part of TCDP course.
 
 ### Technologies Covered 👨🏽‍💻
-1. [ ] [Python 🐍](link)
+1. [x] [Python 🐍](https://github.com/assafdori/TCDP/blob/main/Python/python-cheatsheet.md)
 2. [ ] [Git 📉](link)
 3. [ ] [Docker 🐋](link)
 4. [ ] [K8s 🎡](link)
