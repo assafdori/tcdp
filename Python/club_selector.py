@@ -1,4 +1,5 @@
 def club_selector(name: str, age: int, has_id: bool = False) -> bool:
+    
     """
     club_selector decide if a person can enter the club
 
@@ -10,6 +11,7 @@ def club_selector(name: str, age: int, has_id: bool = False) -> bool:
     Returns:
         bool: is Allowed
     """
+
     isAllowed = is_david(name) and is_an_adult(age) and has_id
 
     return isAllowed
