@@ -4,7 +4,7 @@
 
 ### Technologies Covered 👨🏽‍💻
 1. [x] [Python 🐍](https://github.com/assafdori/TCDP/blob/main/Python/python-cheatsheet.md)
-2. [ ] [Git 📉](link)
+2. [x] [Git 📉](link)
 3. [ ] [Docker 🐋](link)
 4. [ ] [K8s 🎡](link)
 5. [ ] [Jenkins 👨🏽‍🍳](link)
