@@ -16,3 +16,6 @@ scrape_configs:
     scheme: http
     static_configs:
       - targets: ['node-exporter:9100']
+
+rule_files:
+  - alert.rules.yml

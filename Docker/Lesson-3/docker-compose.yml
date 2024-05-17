@@ -12,6 +12,7 @@ services:
       - lesson-3-network
     volumes:
       - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./config/prometheus/alert.rules.yml:/etc/prometheus/alert.rules.yml:ro
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
     ports:
