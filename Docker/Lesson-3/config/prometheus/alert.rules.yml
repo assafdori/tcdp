@@ -32,17 +32,6 @@ groups:
           summary: "High Disk Usage Detected"
           description: "Disk usage is above 50%."
 
-  - name: STATUS-ALERT
-    rules:
-      - alert: ServiceDown
-        expr: up == 0
-        for: 0s
-        labels:
-          severity: warning
-        annotations:
-          summary: "Service Down Detected"
-          description: "Service is down."
-
   - name: NODE-ALERT
     rules:
       - alert: NodeDown
@@ -51,7 +40,7 @@ groups:
         labels:
           severity: warning
         annotations:
-          summary: "Node Down Detected"
+          summary: "Node Down Detected in instance [{{ $labels.instance }}]"
           description: "Node is down."
 
 
