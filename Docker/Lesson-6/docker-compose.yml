@@ -1,5 +1,3 @@
-version: '3.8'
-
 networks:
   lesson-3-network:
     name: lesson-3-network
