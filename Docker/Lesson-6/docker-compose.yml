@@ -1,0 +1,44 @@
+version: '3.8'
+
+networks:
+  lesson-3-network:
+    name: lesson-3-network
+
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    networks:
+      - lesson-3-network
+    volumes:
+      - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./config/prometheus/alert.rules.yml:/etc/prometheus/alert.rules.yml:ro
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
+    restart: unless-stopped
+
+
+  node-exporter:
+    image: prom/node-exporter
+    container_name: node-exporter
+    networks: 
+      - lesson-3-network
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+
+
+  alertmanager:
+    image: prom/alertmanager
+    container_name: alertmanager
+    networks: 
+      - lesson-3-network
+    volumes:
+      - ./config/prometheus/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+    command:
+      - '--config.file=/etc/alertmanager/alertmanager.yml'
+    ports:
+      - "9093:9093"
+    restart: unless-stopped

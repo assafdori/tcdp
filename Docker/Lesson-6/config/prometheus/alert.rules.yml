@@ -1,0 +1,47 @@
+groups:
+  - name: CPU-ALERT
+    rules:
+      - alert: HighCPUUsage
+        expr: node_cpu_seconds_total / node_uptime_seconds * 100 > 90
+        for: 0s
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is above 90% for more than 5 minutes."
+
+  - name: RAM-ALERT
+    rules:
+      - alert: HighRamUsage
+        expr: (1 - ((node_memory_MemFree_bytes + node_memory_Buffers_bytes + node_memory_Cached_bytes) / node_memory_MemTotal_bytes)) * 100 > 50
+        for: 0s
+        labels:
+          severity: critical
+        annotations:
+          summary: "High RAM Usage Detected"
+          description: "RAM usage is above 50%."
+
+  - name: Disk-ALERT
+    rules:
+      - alert: HighDiskUsage
+        expr: (1 - node_filesystem_avail_bytes / node_filesystem_size_bytes) * 100 > 50
+        for: 0s
+        labels:
+          severity: critical
+        annotations:
+          summary: "High Disk Usage Detected"
+          description: "Disk usage is above 50%."
+
+  - name: NODE-ALERT
+    rules:
+      - alert: NodeDown
+        expr: up == 0
+        for: 0s
+        labels:
+          severity: warning
+        annotations:
+          summary: "Node Down Detected in instance [{{ $labels.instance }}]"
+          description: "Node is down."
+
+
+
