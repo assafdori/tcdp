@@ -1,0 +1,11 @@
+Generate a Private Key:
+	openssl genpkey -algorithm RSA -out /etc/nginx/ssl/self-signed.key
+
+Generate a Certificate Signing Request (CSR):
+	openssl req -new -key /etc/nginx/ssl/self-signed.key -out /etc/nginx/ssl/self-signed.csr
+
+Generate the Self-Signed Certificate:
+	openssl x509 -req -days 365 -in /etc/nginx/ssl/self-signed.csr -signkey /etc/nginx/ssl/self-signed.key -out /etc/nginx/ssl/self-signed.crt
+
+Get the Public key out of the certificate:
+	openssl x509 -pubkey -noout -in certificate.crt > public.key
