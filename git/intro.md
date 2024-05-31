@@ -12,4 +12,4 @@ These are the most common Git commands: git add, git commit, git push and git pu
 ### Git branches:  
 Branches are a way of grouping commits together. Branches can be created with 'git checkout -b <name>'.
 When a branch is created from main, the last commit is the tip of the dev branch. 
-It can be merged into main by changing back to main branch and doing 'git merge dev'.
+It can be merged into main by changing back to main branch and doing 'git merge dev'
