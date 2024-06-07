@@ -1,0 +1,19 @@
+services:
+  app:
+    image: app-2
+    ports:
+      - 5001:5001
+    networks:
+      - app-2-network
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    networks:
+      - app-2-network
+
+networks:
+  app-2-network:
