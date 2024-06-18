@@ -1,7 +1,7 @@
 ## First lesson of AWS, covering services, architecture, and deployment.
 
 
-### Covered services:
+### Covered services: ☁️
 
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 - [EC2](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html)
