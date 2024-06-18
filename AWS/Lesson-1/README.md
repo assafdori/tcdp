@@ -1,7 +1,7 @@
 ## First lesson of AWS, covering services, architecture, and deployment.
 
 
-### Covered services: ☁️
+### Covered Services: ☁️
 
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
 - [EC2](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html)
@@ -18,4 +18,4 @@
 - [Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/welcome.html)
 - [EKS](https://docs.aws.amazon.com/eks/latest/userguide/welcome.html)
 - [ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/welcome.html)
-
+- [Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/welcome.html)
