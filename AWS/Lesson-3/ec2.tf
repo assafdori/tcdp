@@ -38,4 +38,3 @@ resource "aws_instance" "technion-instance-private" {
               EOF
   
 }
-
