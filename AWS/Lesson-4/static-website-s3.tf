@@ -62,9 +62,5 @@ resource "aws_s3_object" "error" {
 }
 
 output "website_endpoint" {
-  value = aws_s3_bucket.technion-s3-bucket.website_endpoint
-}
-
-output "website_endpoint-2" {
   value = aws_s3_bucket_website_configuration.technion-s3-bucket-website.website_endpoint
 }
