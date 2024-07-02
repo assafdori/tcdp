@@ -1,0 +1,8 @@
+Dockerfile
+.DS_Store
+.git
+.gitignore
+LICENSE.txt
+README.md
+dockerignore
+./venv
