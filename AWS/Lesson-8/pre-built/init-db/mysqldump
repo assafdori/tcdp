@@ -1,0 +1,11 @@
+docker container run -d -p 3306:3306 --name mysql --env MYSQL_ROOT_PASSWORD=123456 mysql
+
+docker exec -it mysql bash
+
+mysqldump -h 10.0.1.119 -u root -prootpassword --databases Sales_Data Store_Info Inventory store_info > dump.sql
+
+cat dump.sql
+
+mysql -h mysql-db-1.ccjw0efwjrsu.us-east-1.rds.amazonaws.com -u admin -padminadmin < dump.sql
+
+logout from DB in adminer

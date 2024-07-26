@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Select Database</title>
+</head>
+
+<body>
+    <h1>Select Database</h1>
+    <form action="/tables" method="post">
+        <select name="database">
+            {% for db in databases %}
+            <option value="{{ db[0] }}">{{ db[0] }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Select</button>
+    </form>
+</body>
+
+</html>
