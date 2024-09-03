@@ -1,4 +1,2 @@
-/AWS/Lesson-6/ECS/terraform/.terraform.lock.hcl
-/AWS/Lesson-6/ECS/terraform/.terraform/
-/AWS/Lesson-6/ECS/terraform/terraform.tfstate
-/AWS/Lesson-6/ECS/terraform/.*
+**/.terraform/
+**/.terraform.*
