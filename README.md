@@ -8,11 +8,11 @@
 3. [x] [Docker 🐋](link)
 4. [ ] [K8s 🎡](link)
 5. [ ] [Jenkins 👨🏽‍🍳](link)
-6. [ ] [Terraform 🏗️](link)
-7. [ ] [Ansible 💾](link)
-8. [ ] [Prometheus 📜](link)
-9. [ ] [Databases 🗂️](link)
-10. [ ] [Cloud Computing ☁️](link)
+6. [x] [Terraform 🏗️](link)
+7. [x] [Ansible 💾](link)
+8. [x] [Prometheus 📜](link)
+9. [x] [Databases 🗂️](link)
+10. [x] [Cloud Computing ☁️](link)
 11. [ ] [Misc 🧰](link)
 
 ### Homework & Practice 📝
